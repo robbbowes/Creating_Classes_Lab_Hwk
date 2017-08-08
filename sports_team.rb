@@ -40,12 +40,8 @@ class SportsTeam
   end
 
   def update_points(result)
-    if result == "Win"
-      @points += points + 3
-    elsif result == "Draw"
-      @points += points + 1
-    elsif result == "Loss"
-    end
+    @points += points + 3 if result == "Win"
+    @points += points + 1 elsif result == "Draw"
   end
 
 end
